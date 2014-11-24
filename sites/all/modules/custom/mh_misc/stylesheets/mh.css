@@ -1,0 +1,84 @@
+/* line 2, ../sass/mh.sass */
+.cal tr {
+  background: #dad5d2;
+}
+/* line 4, ../sass/mh.sass */
+.cal caption {
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+/* line 8, ../sass/mh.sass */
+.cal td.cal-other,
+.cal td {
+  border-color: black;
+}
+/* line 12, ../sass/mh.sass */
+.cal thead tr {
+  background: transparent !important;
+}
+/* line 14, ../sass/mh.sass */
+.cal table td.active {
+  background-color: inherit;
+}
+
+/* line 16, ../sass/mh.sass */
+.cal-other > div {
+  color: #dad5d2;
+}
+
+/* line 18, ../sass/mh.sass */
+.cal-pastdate {
+  border-color: black !important;
+}
+/* line 20, ../sass/mh.sass */
+.cal-pastdate > div {
+  color: #dad5d2;
+}
+
+/* line 23, ../sass/mh.sass */
+.cal-month caption:after {
+  content: " - Off Season";
+}
+
+/* line 30, ../sass/mh.sass */
+[data-cal-month="04"] caption:after,
+[data-cal-month="05"] caption:after,
+[data-cal-month="06"] caption:after {
+  color: #caec02;
+  content: " - Peak Season";
+}
+/* line 33, ../sass/mh.sass */
+[data-cal-month="04"] tr,
+[data-cal-month="05"] tr,
+[data-cal-month="06"] tr {
+  background: #d2cc07;
+}
+/* line 35, ../sass/mh.sass */
+[data-cal-month="04"] .cal-other > div,
+[data-cal-month="05"] .cal-other > div,
+[data-cal-month="06"] .cal-other > div {
+  color: #d2cc07;
+}
+/* line 37, ../sass/mh.sass */
+[data-cal-month="04"] .cal-pastdate,
+[data-cal-month="05"] .cal-pastdate,
+[data-cal-month="06"] .cal-pastdate {
+  border-color: black !important;
+}
+/* line 39, ../sass/mh.sass */
+[data-cal-month="04"] .cal-pastdate > div,
+[data-cal-month="05"] .cal-pastdate > div,
+[data-cal-month="06"] .cal-pastdate > div {
+  color: #d2cc07;
+}
+
+/* line 41, ../sass/mh.sass */
+.cal-booked > div {
+  background-color: #ff0006;
+}
+
+/* line 45, ../sass/mh.sass */
+.jcbx-glry-classic div:nth-of-type(4) {
+  opacity: 0 !important;
+}

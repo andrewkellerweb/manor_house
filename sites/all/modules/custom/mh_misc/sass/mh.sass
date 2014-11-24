@@ -1,0 +1,46 @@
+.cal
+  tr
+    background: #DAD5D2
+  caption
+    font-size: 12px
+    font-weight: normal
+    text-transform: uppercase
+  td.cal-other,
+  td
+    border-color: #000
+  thead
+    tr
+      background: transparent !important
+  table td.active
+    background-color: inherit
+.cal-other > div
+  color: #DAD5D2
+.cal-pastdate
+  border-color: #000 !important
+  & > div
+    color: #DAD5D2
+.cal-month
+  caption:after
+    content: ' - Off Season'
+
+// Peak seasons
+[data-cal-month="04"],
+[data-cal-month="05"],
+[data-cal-month="06"]
+  caption:after
+    color: #CAEC02
+    content: ' - Peak Season'
+  tr
+    background: #D2CC07
+  .cal-other > div
+    color: #D2CC07
+  .cal-pastdate
+    border-color: #000 !important
+    & > div
+      color: #D2CC07
+.cal-booked > div
+  background-color: #FF0006
+
+// Hide juicebox logo
+.jcbx-glry-classic div:nth-of-type(4)
+  opacity: 0!important

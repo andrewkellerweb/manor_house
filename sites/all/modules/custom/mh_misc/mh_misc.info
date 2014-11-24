@@ -1,0 +1,5 @@
+name = The Manor House Miscellaneous
+description = Custom Functionality specific to 'The Manor House' site.
+core = 7.x
+
+stylesheets[all][] = stylesheets/mh.css

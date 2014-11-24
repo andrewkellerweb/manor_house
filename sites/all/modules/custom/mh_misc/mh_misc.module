@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Misc Functions.
+ */
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function mh_misc_form_alter(&$form, &$form_state, $form_id) {
+  // Changes text on promote checkbox for article.
+  if ($form_id == 'article_node_form') {
+    $form['options']['promote']['#title'] = t('Promote to FPO');
+  }
+  // Disable available cal on first open.
+  if ($form_id == 'page_node_form' && is_null($form['changed']['#default_value'])) {
+    $form['field_calendar'][LANGUAGE_NONE][0]['enabled']['#default_value'] = 0;
+  };
+}
+
+/**
+ * Implements hook_process_page().
+ */
+function mh_misc_process_page(&$vars) {
+  // Hide title on front.
+  if ($vars['is_front'] == TRUE) {
+    $vars['title'] = NULL;
+  }
+}
