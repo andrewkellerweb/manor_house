@@ -1,0 +1,28 @@
+/* Split day coloring */
+html[dir=rtl] .cal .cal-Available-am > span {
+}
+
+html[dir=rtl] .cal .cal-Available-pm > span {
+}
+
+html[dir=rtl] .cal .cal-booked-am > span {
+  border-right-color: #FF0006;
+  border-top-color: #FF0006;
+}
+
+html[dir=rtl] .cal .cal-booked-pm > span {
+  border-left-color: #FF0006;
+  border-bottom-color: #FF0006;
+}
+
+/* Split day dimensioning and positioning */
+.cal td > span {
+  border-left-width: 14px;
+  border-right-width: 14px;
+}
+
+.cal td > span > span {
+  left: auto;
+  right: -14px;
+}
+

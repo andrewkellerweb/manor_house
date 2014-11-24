@@ -1,0 +1,91 @@
+/* Month (table) */
+.cal table {
+  font-size: smaller;
+  color: #000000;
+  border-width: 1px;
+  border-color: #000000;
+  border-style: solid;
+}
+/* Month name and year (caption) */
+.cal caption {
+  text-align: center;
+  font-weight: bold;
+  font-style: inherit;
+  font-size: smaller;
+}
+
+/* Weekday names (header row) */
+.cal thead th {
+  line-height: px;
+  text-align: center;
+  font-weight: bold;
+  font-style: inherit;
+  font-size: inherit;
+  color: #000000;
+  width: 28px;
+}
+
+/* Week notes (header column) */
+.cal tbody th, .cal thead th.cal-weekno-header {
+  width: 90px;
+  color: #000000;
+}
+
+/* Days (td) */
+.cal td {
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+}
+
+/* Whole day coloring */
+.cal-Available, .cal-Available > div {
+}
+
+.cal-booked, .cal-booked > div {
+  background-color: #FF0006;
+}
+
+/* Split day coloring */
+html[dir=ltr] .cal .cal-Available-am > span {
+}
+
+html[dir=ltr] .cal .cal-Available-pm > span {
+}
+
+html[dir=ltr] .cal .cal-booked-am > span {
+  border-left-color: #FF0006;
+  border-top-color: #FF0006;
+}
+
+html[dir=ltr] .cal .cal-booked-pm > span {
+  border-right-color: #FF0006;
+  border-bottom-color: #FF0006;
+}
+
+/* Split day dimensioning and positioning */
+.cal td > span {
+  width: 0;
+  height: 0;
+  border-left-width: 14px;
+  border-top-width: 14px;
+  border-right-width: 14px;
+  border-bottom-width: 14px;
+}
+
+.cal td > span > span {
+  top: -14px;
+  left: -14px;
+}
+
+/* Dimensions and other properties for element containing day number */
+.cal td > div, .cal td > span > span {
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+}
+
