@@ -1,0 +1,184 @@
+/* Font colors */
+/* line 11, ../sass/layout.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 17, ../sass/layout.scss */
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+/* line 22, ../sass/layout.scss */
+body {
+  background-image: url(../images/bg-main.jpg);
+  background-position: 50% 0;
+  background-repeat: repeat-y;
+  background-size: 100%;
+  height: 100%;
+  padding: 30px 0 0;
+  font-family: 'Alegreya', serif;
+  color: #fff;
+  line-height: 2rem;
+  font-size: 2rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 36, ../sass/layout.scss */
+h1 {
+  font-size: 2.6rem;
+  color: #8cc63f;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* line 44, ../sass/layout.scss */
+a {
+  color: #8cc63f;
+  text-decoration: none;
+}
+/* line 47, ../sass/layout.scss */
+a:hover {
+  color: #d2df79;
+}
+
+/* line 50, ../sass/layout.scss */
+.container-main {
+  width: 1000px;
+  margin: 0 auto;
+  background: url(../images/bg-brown-65.png);
+}
+
+/* line 57, ../sass/layout.scss */
+header .logo {
+  padding: 10px;
+  text-align: center;
+}
+/* line 62, ../sass/layout.scss */
+header .page-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 70, ../sass/layout.scss */
+.flex-container {
+  display: flex;
+}
+
+/* line 74, ../sass/layout.scss */
+.flex-item-1 {
+  flex: 1;
+}
+
+/* line 78, ../sass/layout.scss */
+.flex-item-2 {
+  flex: 2;
+}
+
+/* line 82, ../sass/layout.scss */
+.flex-item-3 {
+  flex: 3;
+}
+
+/* line 86, ../sass/layout.scss */
+.flex-item-4 {
+  flex: 4;
+}
+
+/* line 90, ../sass/layout.scss */
+nav {
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: 'Quattrocento', serif;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzkxOGE4MiIvPjxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjZWFkY2NjIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNlYWRjY2MiLz48c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2VhZGNjYyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzkxOGE4MiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #918a82), color-stop(25%, #eadccc), color-stop(50%, #eadccc), color-stop(75%, #eadccc), color-stop(100%, #918a82));
+  background-image: -moz-linear-gradient(left, #918a82, #eadccc, #eadccc, #eadccc, #918a82);
+  background-image: -webkit-linear-gradient(left, #918a82, #eadccc, #eadccc, #eadccc, #918a82);
+  background-image: linear-gradient(to right, #918a82, #eadccc, #eadccc, #eadccc, #918a82);
+}
+/* line 93, ../sass/layout.scss */
+nav li.leaf, nav li.expanded, nav li.collapsed {
+  list-style-type: none;
+  list-style-image: none;
+  list-style: none;
+}
+/* line 100, ../sass/layout.scss */
+nav ul.menu {
+  display: flex;
+  padding: 10px 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 106, ../sass/layout.scss */
+nav ul.menu li {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 114, ../sass/layout.scss */
+nav a, nav span {
+  display: block;
+  color: #754c28;
+  padding: 15px 0px;
+}
+/* line 118, ../sass/layout.scss */
+nav a:hover, nav span:hover {
+  color: #006738;
+}
+/* line 119, ../sass/layout.scss */
+nav a.active, nav span.active {
+  color: #006738;
+}
+
+/* line 123, ../sass/layout.scss */
+img.banner {
+  width: 100%;
+}
+
+/* line 127, ../sass/layout.scss */
+.content-main {
+  padding: 60px 40px;
+  line-height: 3.4rem;
+}
+
+/* line 132, ../sass/layout.scss */
+aside {
+  padding: 30px 0 0;
+}
+/* line 134, ../sass/layout.scss */
+aside svg {
+  fill: #fff;
+  opacity: .7;
+  height: 43px;
+}
+/* line 139, ../sass/layout.scss */
+aside svg.twitter {
+  padding: 9px;
+}
+/* line 142, ../sass/layout.scss */
+aside svg.googleplus {
+  padding: 3px;
+}
+/* line 145, ../sass/layout.scss */
+aside a:hover svg {
+  fill: #d2df79;
+}
+
+/* line 148, ../sass/layout.scss */
+.tabs.primary li a {
+  color: #754c28;
+}
+
+/* line 149, ../sass/layout.scss */
+.tabs.primary li.active a {
+  color: #006738;
+}
